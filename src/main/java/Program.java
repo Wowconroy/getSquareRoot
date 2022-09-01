@@ -1,10 +1,12 @@
 public class Program {
     public static void main(String[] args) {
         Program pg = new Program();
-        System.out.println(pg.getSquareRoot(9));
+        System.out.println(pg.getSquareRoot(6));
     }
 
     public int getSquareRoot(int value) {
+        if (value <= 0) return 0;
+        if (value <= 3) return 1;
 
         int temp;
 
